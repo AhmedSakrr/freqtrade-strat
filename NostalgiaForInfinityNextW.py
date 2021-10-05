@@ -3804,7 +3804,7 @@ class NostalgiaForInfinityNextW(IStrategy):
             (current_profit < -0.04)
             and (max_profit < 0.01)
             and (last_candle["close"] < last_candle["ema_200"])
-            and (last_candle["close"] < last_candle["sup_level_1h"])
+            
             and (last_candle["cmf_1h"] < -0.0)
             and (last_candle["btc_not_downtrend_1h"] == False)
         ):
@@ -3814,7 +3814,7 @@ class NostalgiaForInfinityNextW(IStrategy):
             (current_profit < -0.04)
             and (max_profit < 0.02)
             and (last_candle["close"] < last_candle["ema_200"])
-            and (last_candle["close"] < last_candle["sup_level_1h"])
+            
             and (last_candle["btc_not_downtrend_1h"] == False)
             and (last_candle["cmf_1h"] < -0.0)
             and (current_time - timedelta(minutes=1440) > trade.open_date_utc)
